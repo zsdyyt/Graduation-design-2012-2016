@@ -1,0 +1,43 @@
+/* General Demo Style */
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.main {
+	height:300px;
+	width: 80%;
+	max-width: 76em;
+	margin: 10px auto 80px auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.main2 {
+	height:340px;
+	width: 80%;
+	max-width: 76em;
+	margin: 10px auto 80px auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+@media screen and (max-width: 63.125em) {
+	.main {
+		height:840px;
+	}
+	
+	.main2 {
+		height:480px;
+	}
+}

@@ -1,0 +1,243 @@
+.rb-grid {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.rb-grid li {
+	width: 32%;
+	height: 8em;
+	margin: 0.6%;
+	background: #8CC7DF;
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 0.3em;
+	cursor: pointer;
+	position: relative;
+}
+
+.rb-grid li.rb-span-2 {
+	width: 15.5%;
+}
+
+.rb-grid li.rb-span-4 {
+	width: 59%;
+}
+
+.rb-grid li.rb-span-5 {
+	width: 25%;
+}
+
+.rb-grid li.rb-span-6 {
+	width: 39.2%;
+}
+
+.rb-grid li.rb-span-7 {
+	width: 38.2%;
+}
+
+.rb-grid li.rb-span-8 {
+	width: 32%;
+}
+
+.rb-temp {
+	float:left;
+	display: block;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.rb-grid li:hover .rb-temp {
+	opacity: 1;
+}
+
+#myword{
+	font-family: "微软雅黑";
+	float: left;
+	font-size: 1em;
+	font-weight: bolder;
+	letter-spacing:3px;
+	width: auto;
+	height: auto;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+#mywordt {
+	display:none;
+	font-family: "微软雅黑";
+	float: left;
+	font-size: 1em;
+	font-weight: bolder;
+	letter-spacing:3px;
+	width: auto;
+	height: auto;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+#myout {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+.rb-grid li .rb-overlay {
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	z-index: -1;
+	pointer-events: none;
+	cursor: default;
+	overflow:scroll;
+	overflow-x: hidden;
+}
+
+.rb-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 2em;
+	height: 2em;
+	text-indent: -9000px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.rb-close::before {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	content: 'x';
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 3em;
+	line-height: 0.6;
+	text-align: center;
+	text-indent: 0px;
+}
+
+.rb-week {
+	width: 100%;
+	height: 100%;
+}
+
+.rb-week > div{
+	width: 100%;
+	height:100%;
+}
+
+.rb-week .rb-city {
+	padding: 1% 10%;
+}
+.moreword {
+	width: 70%;
+	height: auto;
+	margin: 3% 15% auto 15%;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 2px;
+	text-align: left;
+	text-indent: 2em;
+}
+
+
+
+@media screen and (max-width: 63.125em) {
+	
+	.rb-grid li,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 8em;
+		text-align: left;
+	}
+	
+	#mywordt {
+		display:block;
+	}
+	.rb-grid li.rb-span-2 {
+		width: 48.8%;
+		height: 8em;
+		text-align: left;
+	}
+	
+	.rb-grid li.rb-span-5 {
+		width: 48.6%;
+		height: 8em;
+		text-align: left;
+	}
+	
+	.rb-grid li.rb-span-6 {
+		width: 48.8%;
+		height: 8em;
+		text-align: left;
+	}
+	
+	.rb-grid li.rb-span-7 {
+		width: 49%;
+		height: 8em;
+		text-align: left;
+	}
+	
+	.rb-grid li.rb-span-8 {
+		width: 48.8%;
+		height: 8em;
+		text-align: left;
+	}
+
+	.rb-grid li > div {
+		text-align: center;
+	}
+}
+
+#cd-redword {
+	width: 74.5%;
+	height: 35px;
+	background-color: #000;
+	color: #de0a0a;
+	margin-left: 12.5%;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 35px;
+	padding-left:10px;
+	letter-spacing:2px;
+	margin-top:40px;
+}
+
+#cd-yellowword {
+	width: 74.5%;
+	height: 35px;
+	background-color: #000;
+	color: #f49807;
+	margin-left: 12.5%;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 35px;
+	padding-left:10px;
+	letter-spacing:2px;
+	margin-top:40px;
+}
+
+#cd-redwords {
+	float:left;
+}
+#cd-redsanjiao {
+	float:right;
+	width:15px;
+	height:8px;
+	margin-top:13.5px;
+	margin-right:15px;
+	margin-left:auto;
+}

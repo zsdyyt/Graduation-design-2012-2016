@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style2.css">
+<script src="js/modernizr.js"></script>
+<link rel="stylesheet" href="css/reset.css"><link href="js/home/homestyle.css" rel="stylesheet" type="text/css">
+<!--<script src="js/titleshow.js"></script> -->
+<title>拉贝日记</title>
+ <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body bgcolor="#1c1c1c" background="image/overlay-T.png">
+<div clss="try">
+	<header class="cd-header">
+    	<div class="title3"><img src="image/title-3.png"></div>
+  		<div class="cd-them" id="cd-them">
+    		<nav>
+				<ul id="nav-two">
+				<li class="cd-them2"><a href="index.html">主 页</a>
+                <audio id="beep-two">
+					<source src="audio/beep.mp3" controls></source>
+					<source src="audio/beep.ogg" controls></source>
+				</audio>
+                </li>
+				<li class="cd-them2" id="cd-them2"><a href="time.html">时间隧道
+                	<em class="nav_sub_arrow"  ></em>
+                </a>
+                	<div class="nav_sub" id="nav_sub2">
+                    	<div class="nav_sub_top"></div>
+                        <div class="nav_sub_container">
+                        	<img src="image/title-time.jpg"/>
+                        	<strong>
+                        		<span>进入拉贝日记</span>
+                        	</strong>
+                        	<p>
+                        		<span>体会拉贝和难民们的安全区生活</span>
+                        	</p>
+                        </div>
+                        <div class="nav_sub_btm"></div>
+                    </div>
+                </li>
+				<li class="cd-them3" id="cd-them3"><a href="home.html">“走进”拉贝
+                	<em class="nav_sub_arrow2"  ></em>
+                </a>
+                	<div class="nav_sub2">
+                    	<div class="nav_sub_top2"></div>
+                        <div class="nav_sub_container2">
+                        	<img src="image/title-home.jpg"/>
+                        	<strong>
+                        		<span>探索南京安全区</span>
+                        	</strong>
+                        	<p>
+                        		<span>感受南京安全区中难民们的生活</span>
+                        	</p>
+                        </div>
+                        <div class="nav_sub_btm2"></div>
+                    </div>
+                
+                </li>
+				<li class="cd-them2" id="cd-them4"><a href="people.html">人物介绍
+                	<em class="nav_sub_arrow3"  ></em>
+                </a>
+                	<div class="nav_sub3">
+                    	<div class="nav_sub_top3"></div>
+                        <div class="nav_sub_container3">
+                        	<img src="image/title-people.jpg"/>
+                        	<strong>
+                        		<span>南京安全区重要人员</span>
+                        	</strong>
+                        	<p>
+                        		<span>体会南京安全区委员们的努力和难民们的困苦</span>
+                        	</p>
+                        </div>
+                        <div class="nav_sub_btm3"></div>
+                    </div>
+                </li>
+				<li class="cd-them2" id="cd-them5"><a href="publish.html">小说历程
+                	<em class="nav_sub_arrow4"  ></em>
+                </a>
+                	<div class="nav_sub4">
+                    	<div class="nav_sub_top4"></div>
+                        <div class="nav_sub_container4">
+                        	<img src="image/title-publish.jpg"/>
+                        	<strong>
+                        		<span>拉贝日记的出版历程</span>
+                        	</strong>
+                        	<p>
+                        		<span>跟随时间了解小说面世的不易</span>
+                        	</p>
+                        </div>
+                        <div class="nav_sub_btm4"></div>
+                    </div>
+                </li>
+				<li class="cd-them2" id="cd-them6"><a href="film.html">电影欣赏
+                	<em class="nav_sub_arrow5"  ></em>
+                </a>
+                	<div class="nav_sub5">
+                    	<div class="nav_sub_top5"></div>
+                        <div class="nav_sub_container5">
+                        	<img src="image/title-film.jpg"/>
+                        	<strong>
+                        		<span>拉贝日记电影欣赏</span>
+                        	</strong>
+                        	<p>
+                        		<span>感受画面和声音带来的强大冲击力</span>
+                        	</p>
+                        </div>
+                        <div class="nav_sub_btm5"></div>
+                    </div>
+                </li>
+				</ul>
+			</nav>
+        </div>  
+        <div> 
+        	<a class="cd-primary-nav-trigger" href="#0">
+            	<span class="cd-menu-icon"></span>
+			</a>
+        </div>
+	</header>
+	 <nav>
+		<ul class="cd-primary-nav">
+        	<li><a href="index.html">主 页</a></li>
+			<li><a href="time.html">时间隧道</a></li>
+			<li><a href="home.html">“走进”拉贝</a></li>
+			<li><a href="people.html">人物介绍</a></li>
+			<li><a href="publish.html">小说历程</a></li>
+			<li><a href="film.html">电影欣赏</a></li>
+		</ul>
+	</nav>
+    
+    <section class="cd-img">
+    	<img src="image/title-1.png">
+	</section>
+    
+    <section class="demo-wrapper1">
+        <ul class="portfolio-items">
+        <div class="finallything"><iframe width="900px" height="500px" scrolling="no" frameborder="0" src="finallything/finally3.html" marginwidth="0" ></iframe></div>
+        </ul>
+    </section>
+    
+    <footer class="cd-footer">Copyright © 2015 - 2016 KELSEY. All Rights Reserved</footer>
+</div>
+    
+<script>$("#nav-two a")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");</script>
+<script src="js/main1.js"></script>
+
+</body>
+</html>

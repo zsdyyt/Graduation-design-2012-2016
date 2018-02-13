@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>拉贝日记</title>
+<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+<script src="js/modernizr.custom.js"></script>
+
+<link href="video-js/video-js.css" rel="stylesheet" type="text/css">
+<link href="css/index/photoshow.css" rel="stylesheet" type="text/css">
+<script src="video-js/video.js"></script>
+<script>
+	videojs.options.flash.swf = "video-js/video-js.swf";
+</script>
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+
+<!--<script>
+    if (navigator.userAgent.indexOf('MSIE') >= 0){
+        document.getElementById("videoDiv").innerHTML='<embed src="Wildlife.mp4" autostart="true" loop="true" width="640" height="480" >';
+    }
+ </script> -->
+
+
+</head>
+
+<body bgcolor="#1c1c1c" background="image/overlay-T.png">
+	<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+                	<div class="dateword"><iframe width="100%" height="100%" scrolling="no" frameborder="0" src="gettime/1.html" marginwidth="0"></iframe></div>
+ 				</h1>
+                
+                <!--loading的东西 -->
+                <div class="ip-loader">
+					<svg class="ip-inner" width="100%" height="10px" viewBox="0 0 1000 10" >
+				<path class="ip-loader-circlebg" d="M100,5 L900,5"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M100,5 L900,5"/>
+					</svg>
+				</div>
+			</header>
+            
+            
+            <!-- main content -->
+			<div class="ip-main">
+            	<header class="cd-header">
+                	<a class="cd-primary-nav-trigger" href="#0">
+                    	<span class="cd-menu-icon"></span>
+					</a>
+                </header>
+                
+                <nav>
+					<ul class="cd-primary-nav" id="cd-primary-nav">
+
+					<li><a href="index.html" target="_blank">主 页</a>
+                    <audio id="beep-two">
+					<source src="audio/beep.mp3" controls></source>
+					<source src="audio/beep.ogg" controls></source>
+					</audio>
+                    </li>
+					<li><a href="time.html" target="_blank">时间隧道</a></li>
+					<li><a href="home.html" target="_blank">“走进”拉贝</a></li>
+					<li><a href="people.html" target="_blank">人物介绍</a></li>
+					<li><a href="publish.html" target="_blank">小说历程</a></li>
+					<li><a href="film.html" target="_blank">电影欣赏</a></li>
+					</ul>
+				</nav>
+    
+            	<section class="cd-intro">
+                	<div class="title_img"> <img src="image/title-2.png" /></div>
+				</section>
+                
+                <section class="screen" id="screen">
+                	<div id="cube" class='cube'>
+<!--                    <img id="1" src="img/1.jpg" class='face' data-transform="translateZ(-400px)" style="outline:none !important"> -->
+                    <ul>
+                    	<li>
+                        <div class='face button1' data-transform="translateX(-430px) translateY(-170px) translateZ(-340px) scale(0.7)"><video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="550"height="319" poster="video-js/my_video_poster.png"    data-setup="{}">
+                        <source src="video/movie1.mp4" type='video/mp4'> 
+                        <source src="video/movie1.ogg" type="video/ogg" />
+                        <source src="video/movie1.webm" type="video/webm" />
+                        </video>
+                        </div></li>
+                        <li class='face button' data-transform="translateX(-375px) translateY(115px) translateZ(-340px) scale(0.7)"><img src="image/time1.jpg"><div class="wordthing"><a href="time.html" target="_blank">时间隧道</a><h1 class="wordthing2">The time tunnel</h1></div>
+                        <li class='face button3' data-transform="translateX(-214px) translateY(125px) translateZ(-340px) scale(0.7)"><a href="film.html" target="_blank"><img src="image/filmword1.jpg" class="3"></a><img src="image/film.jpg" class="3"></li>
+                   </ul>
+                   <ul>
+                   	<li class='face button2' data-transform="translateX(70px) translateY(-168px) translateZ(-340px) scale(0.7)"><img src="image/people.jpg"><div class="wordthing3"><a href="people.html" target="_blank">人物介绍</a><h1 class="wordthing4">Personage introduction</h1></div></li>
+                    <li class='face button4'  data-transform="translateX(88px) translateY(128px) translateZ(-340px) scale(0.7)"><img src="image/publish1.jpg" class="3"><a href="publish.html" target="_blank"><img src="image/publishword1.jpg" class="3"></li>
+                   </ul>
+                   <ul>
+                   	<li class='face button5' data-transform="translateX(350px) translateY(-168px) translateZ(-340px) scale(0.7)"><a href="home.html" target="_blank"><img src="image/homeword1.jpg" class="3"></a><img src="image/home1.jpg"></li>
+                    <li class="face button6" data-transform="translateX(600px) translateY(218px) translateZ(-340px) scale(0.7)"><!-- JiaThis Button BEGIN -->
+<!-- JiaThis Button BEGIN -->
+<!-- JiaThis Button BEGIN -->
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+</div>
+<!-- JiaThis Button END --></li>
+                   </ul>
+   					</div>
+				</section>
+                
+                <footer class="buttomstylt"></footer>
+			</div>
+
+	</div><!-- /container -->
+<script>$("#cd-primary-nav a")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");</script>    <script src="js/classie.js"></script>
+	<script src="js/pathLoader.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/main1.js"></script> <!-- Resource jQuery -->
+    <script type="text/javascript" src="js/photoshow.js"></script>
+<script type="text/javascript" >
+var jiathis_config={
+	sm:"weixin,cqq,qzone,tsina",
+	url:"http://www.baidu.com",
+	summary:"赶快点击了解更多南京大屠杀的相关资料！",
+	title:"在线“拉贝日记”网站设计—— #拉贝日记，我来看#",
+	pic:"http://image.baidu.com/search/detail?ct=503316480",
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+</body>
+</html>
